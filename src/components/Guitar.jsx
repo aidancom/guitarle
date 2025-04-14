@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Guitar({data, addToCart}) {
-  const {id, name, image, description, price} = data
+  const {name, image, description, price} = data
 
   return (
     <>
