@@ -45,7 +45,7 @@ export const useCart = () => {
     const itemExists = cart.findIndex(guitar => guitar.id === item.id)
     if (itemExists < 0) {
       const itemQuantity = {...item, quantity: 1}
-      setCart(itemQuantity)
+      setCart([...cart, itemQuantity])
     } else {
       const itemQuantityUpdate = [...cart]
       itemQuantityUpdate[itemExists].quantity++
